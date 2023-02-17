@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>profile</title>
+  <link rel="stylesheet" href="/style/profile.css">
+</head>
+<body>
+  <div class="top-design">
+    <a class = "homelink" href="/profile">Home</a>
+      <a class = "login-button" href="/sign-out">Sign out</a>
+  </div> 
+  <div class="quarter-back">
+    <img class = "profile-icon"src="https://cdn2.iconfinder.com/data/icons/top-business/32/business_profile_person_tick_check_mark-512.png">
+      <div class = "profile-info">
+            My account
+              {{ .Username }}
+                  email: {{ .Email }}
+        </div>
+  </div>
+  <div class = "category-buttons" >
+    <form action="/created-posts" method="post">
+    <button name="buttons" value="createdposts" type="submit"required>Created posts</button>
+    </form>
+    <form action = "/liked-posts" method="post">
+    <button name="buttons"value="likedposts" type="submit"required>Liked posts</button>
+    </form>
+    <form action = "/profilecontentdisplay"method="post">
+      <button name="buttons"value="sales" type="submit" required>Sales</button>
+      <button name="buttons"value="holiday" type="submit" required>Holidays</button>
+      <button name="buttons"value="facts" type="submit" required>Facts</button>
+      <button name="buttons"value="events" type="submit" required>Events</button>
+      <button name="buttons"value="quotes" type="submit" required>Quotes</button>
+      <button name="buttons"value="books" type="submit" required>Books</button>
+      <button name="buttons"value="guidesandtips" type="submit" required>Guides and tips</button>
+    </form>
+  </div>
+    <form action="/profile" method="post">
+      <div class="make-post-design">
+          <div class = "label">Content</div>
+        <div class = "content-select"> 
+          <select name="content" id="content"multiple>
+          <option value="sales">sales</option>
+          <option value="holiday">holidays</option>s
+          <option value="facts">facts</option>
+          <option value="events">events</option>
+          <option value="quotes">quotes</option>
+          <option value="books">books</option>
+          <option value="guidesandtips">guides and tips </option>
+          </select>
+        </div>
+            <div class = "label">Title</div>
+        <div class = "textarea">
+          <textarea name="title" placeholder="Creating a Title..."></textarea>
+        </div>
+            <div class = "label">Post</div>
+        <div class = "textarea">
+        <textarea name="mypost" placeholder="Creating a Forum Post..."></textarea>
+        </div>
+          <div class = "login">
+        <input type="submit" value="Post"/>
+          </div>
+      </div>
+    </form>
+    {{range .Post}}
+  <div class="post-container">
+    <div class = "title"> 
+      {{.Title}}
+     </div>        
+     <div class="image-author-location">
+      <img class = "post-avatar"src="https://avatarfiles.alphacoders.com/117/117626.jpg">
+      <span class = "author">
+        {{.Author}}
+      </span>
+  </div>
+      <div class="posts">
+        {{.Posts}}
+      </div>
+          <a class = "more-link" href="/moreinfo/?id={{ .Post_id}}">
+            more
+            </a>
+  </div>
+  {{end}}
+</body>
+</html>

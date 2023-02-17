@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signin</title>
+    <link rel="stylesheet" href="/style/signin.css">
+</head>
+<body>
+  <div class="top-design">
+    <a class = "homelink" href="/home">Home</a>
+    <a class = "login-button" href="/signup">Sign up</a>
+</div> 
+    <div class="quarter-back">
+  <img class = "profile-icon"src="https://cdn2.iconfinder.com/data/icons/top-business/32/business_profile_person_tick_check_mark-512.png">
+    </div>
+    <div class = "intro-text">
+      Please enter your username and password
+    </div>
+        <div class = "error-message">
+          {{ .Erstring }}
+        </div>
+          <form action="/signin" method="post">
+            <div class = "signin-box">
+              <span class ="authorization">Username</span>
+                <input type="text" placeholder="Enter username" name="username" id="username"title = "Enter a valid username"required>
+              <span class="authorization">Password</span>
+                <input type="password" placeholder="Enter Password" name="password" id="psw"title = "Enter a valid password"required>
+                <div class = "login">
+              <button type="submit" class="registerbtn">Login</button>
+                </div>
+            </form>
+          
+</body>
+</html>

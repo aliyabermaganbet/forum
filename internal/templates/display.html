@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <link rel="stylesheet" href = /style/display.css>
+</head>
+<body>
+  <form action="/home" method="post">
+    <div class="top-design">
+        <a class = "homelink" href="/home">Home</a>
+        <a class = "login-button" href="/signup">Sign up</a>
+        <a class = "login-button-2" href="/signin">Sign in</a>
+    </div>
+        <div class="quarter-back">
+          <img class = "profile-icon"src="https://cdn2.iconfinder.com/data/icons/top-business/32/business_profile_person_tick_check_mark-512.png">
+        </div>
+        <div class = "category-buttons">
+          <button name = "content"  value="sales" type="submit">Sales</button>
+          <button name = "content"  value="holiday" type="submit">Holiday</button>
+          <button name = "content" value="facts" type="submit">Facts</button>
+          <button name = "content" value="events" type="submit">Events</button>
+          <button name = "content" value="quotes" type="submit">Quotes</button>
+          <button name = "content" value="books" type="submit">Books</button>
+          <button name = "content" value="guidesandtips" type="submit">Guides and tips</button>
+        </div>
+          </form>
+          <div class="post-container">
+            <div class = "title"> 
+              {{.Title}}
+             </div>        
+             <div class="image-author-location">
+              <img class = "post-avatar"src="https://avatarfiles.alphacoders.com/117/117626.jpg">
+              <span class = "author">
+                {{.Author}}
+              </span>
+              </div>
+              <div class="posts">
+                {{.Posts}}
+              </div>
+          </div>
+          <div class = "display-like-dislike">
+              <div class = "like-dislike-button">
+                    <button disabled type="submit">Like</button>
+              </div>
+            <span class = "show-like">{{.Countliked}}</span>
+              <div class = "like-dislike-button">
+              <button disabled type="submit">Dislike</button>
+              </div>
+            <span class = "show-like"> {{.Countdisliked}}</span>
+            </div>
+            <h1>Comments</h1>
+            {{range .Forcomment}}
+        <div class="post-container">  
+          <div class = "comment-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25663.png">
+          </div>       
+           <div class="image-author-location">
+            <img class = "post-avatar"src="https://avatarfiles.alphacoders.com/117/117626.jpg">
+            <span class = "author">
+              {{.Commentername}}
+            </span>
+            </div>
+            <div class="posts">
+              {{.Commenttext}}
+            </div>
+          </div>
+          <div class = "display-like-dislike">
+            <form  action="/likecomment"method="post">
+              <div class = "like-dislike-button">
+                    <button disabled type="submit">Like</button>
+              </div>
+            </form>
+            <span class = "show-like">{{.Likes}}</span>
+            <form action="/dislikecomment"method="post">
+              <div class = "like-dislike-button">
+              <button disabled type="submit">Dislike</button>
+              </div>
+            </form>
+          <span class = "show-like"> {{.Dislikes}}</span>
+            </div>
+            {{end}}
+</body>
+</html>

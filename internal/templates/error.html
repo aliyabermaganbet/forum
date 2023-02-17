@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+body
+{
+    background: white ;
+    height: 100vh;
+}
+#container
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container .content 
+{
+    text-align: center;
+}
+#container .content h2
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 5vw;
+    color:rgb(50, 45, 30);
+    line-height: 1em;
+
+}
+#container .content a
+{
+    position: relative;
+    display: inline-block;
+    padding: 10px 25px;
+    background: #e5e050;
+    color: rgb(43, 40, 40);
+    text-decoration: none;
+    margin-top: 25px;
+    border-radius: 25px;
+    border-bottom: 4px solid #a58c0e;
+}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <img src="https://t3.ftcdn.net/jpg/02/95/34/72/360_F_295347201_ZQfeqTU03fWOUOGq87M3ShBCJx9Vrn9G.jpg" width="400" height = "300"alt="Author Image" style="border-radius: 50%;">
+            <h2>  {{.Code}} error </h2>
+            <h2>{{ .Message}}</h2>
+        {{if ne .User 0}}
+            <a href = "/profile">
+                Go back to profile
+            </a>
+            {{else}}
+            <a href = "/home">
+                Go back to home
+            </a>
+            {{end}}
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+h1 {text-align: center;}
+body {
+ background: linear-gradient(to right, rgb(255, 255, 255), rgb(233, 223, 148));
+   }
+.top-design {
+ overflow: hidden;background-color: #e9e9e9;
+}
+ .homelink {
+  width: 3.5%;
+    font-weight: bold;
+    float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+    color:#fefeff;
+    cursor: pointer;
+    height:18px;
+    border-color: rgb(214, 188, 71);
+    font-family: georgia;
+    border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+    background-color:rgb(108, 224, 185);}
+.login-button {
+  height:18px;
+  font-weight: bold;
+  position:fixed;
+ right:10px;
+background-color: rgb(108, 224, 185);
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+    color:#fefeff;
+    cursor: pointer;
+    border-color: rgb(214, 188, 71);
+    font-family: georgia;
+    border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+    background-color:rgb(108, 224, 185);}
+    .login-button-2 {
+      height:18px;
+      font-weight: bold;
+     position:fixed;
+     right:135px;
+    background-color: rgb(108, 224, 185);
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 20px;
+        color:#fefeff;
+        cursor: pointer;
+        border-color: rgb(214, 188, 71);
+        font-family: georgia;
+        border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+        background-color:rgb(108, 224, 185);}
+    
+.quarter-back{
+background-color: #d9cb8e; height:197px; }
+.profile-icon {
+   width: 210px;height: 200px;}
+.category-buttons button{
+   display: inline-block;
+  flex-direction: column;
+  width: 8%;
+  font-weight: bold;
+  cursor: pointer;color:#fefeff;
+  border-color: rgb(214, 188, 71);
+  font-size: 18px;
+  height: 50px;
+  font-family: georgia;
+  border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+  background-color:rgb(108, 224, 185);
+ }
+ .post-container{
+   color: #302f2f;
+   font-style: oblique;
+   font-weight: bold; 
+   background-color: rgb(108, 224, 185); 
+   padding: 20px; width: 600px;
+   margin-left: 40%;
+   border:double 4px rgb(89, 88, 86);
+   border-radius: 15px 50px 30px;
+   margin-top: 30px;
+ }
+ .title{
+   margin: 0 0 10px;font-size: 20px;color: #302f2f;overflow: auto;
+ }
+ .post-avatar{
+   width: 100px;;border-radius: 50%;
+ }
+ .author{
+   font-weight: bold;font-size: 30px;color: #302f2f;
+ }
+ .image-author-location{
+   display: flex;
+ }
+ .posts {
+   overflow: auto;
+ }
+ .more-link{
+   font-size: 15px; cursor: pointer;position:absolute;margin-inline-start: 520px;margin-top: -10px;color: #54545b;
+ }
+ 

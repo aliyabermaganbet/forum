@@ -1,0 +1,141 @@
+body {
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(233, 223, 148));
+  }
+
+  .make-post-design {
+    margin-left: 300px;
+  }
+
+  .mypost {
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .login-container {
+    background-color: rgb(108, 224, 185);
+  }
+  .homelink {
+    width: 3.5%;
+    font-weight: bold;
+    float: left;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+    color:#fefeff;
+    cursor: pointer;
+    height:18px;
+    border-color: rgb(214, 188, 71);
+    font-family: georgia;
+    border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+    background-color:rgb(108, 224, 185);}
+.login-button {
+  height:18px;
+  font-weight: bold;
+  position:fixed;
+ right:10px;
+background-color: rgb(108, 224, 185);
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+    color:#fefeff;
+    cursor: pointer;
+    border-color: rgb(214, 188, 71);
+    font-family: georgia;
+    border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+    background-color:rgb(108, 224, 185);}
+.quarter-back{
+background-color: #d9cb8e; height:200px; 
+}
+.profile-icon {
+width: 210px;height: 200px;
+}
+.top-design {
+  overflow: hidden;background-color: #e9e9e9;
+}
+
+.profile-info {
+  justify-content: flex-end;
+  font-weight: 700;
+  padding: 20px 15px;
+  margin-block-start: -220px;
+  color: #54545b;
+  width: 8%;
+  font-size: 30px;
+  margin-left: 240px;
+}
+.category-buttons button{
+  display: inline-block;
+  flex-direction: column;
+  width: 8%;
+  font-weight: bold;
+  cursor: pointer;color:#fefeff;
+  border-color: rgb(214, 188, 71);
+  font-size: 18px;
+  height: 50px;
+  font-family: georgia;
+  border:double 4px rgb(238, 200, 122);border-radius: 15px 50px 30px;
+  background-color:rgb(108, 224, 185);
+}
+.label{
+  font-size: 23px;
+  color: #54545b;
+  font-weight: bold;
+  font-style: Georgia;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.content-select select{
+font-family: georgia; 
+font-size: 17px; 
+color:#54545b;
+}
+.textarea textarea{
+  width: 55%; 
+  height: 75px;
+  resize: none;
+  font-family: georgia; 
+  font-size: 15px; 
+}
+.login input{
+  color:#49494d;
+background-color: rgb(108, 224, 185);
+margin-top: 10px;
+border-radius: 10px;
+font-family: Georgia;
+font-size: 15px;
+font-weight: bolder;
+}
+.post-container{
+color:#49494d;
+ font-style: oblique;
+ font-weight: bold; 
+ background-color: rgb(108, 224, 185); 
+ padding: 20px; width: 600px;
+ margin-left: 40%;
+ border:double 4px rgb(89, 88, 86);
+ border-radius: 15px 50px 30px;
+ margin-top: 30px;
+}
+.title{
+ margin: 0 0 10px;font-size: 20px;color:#49494d;overflow: auto;
+}
+.post-avatar{
+ width: 100px;;border-radius: 50%;
+}
+.author{
+ font-weight: bold;font-size: 30px;color:#49494d;
+}
+.image-author-location{
+ display: flex;
+}
+.posts {
+color:#49494d;
+ overflow: auto;
+}
+.more-link{
+ font-size: 15px; cursor: pointer;position:absolute;margin-inline-start: 520px;margin-top: -10px;color:#49494d;
+}
