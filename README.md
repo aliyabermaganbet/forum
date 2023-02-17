@@ -35,7 +35,7 @@ Finally, Docker, a containerization technology, must be used to make the project
 
 # Run Locally
 
-    1. Clone the project by running the following command in the terminal "git@git.01.alem.school:aliya.science/forum.git"
+    1. Clone the project by running the following command in the terminal "git@github.com:aliyabermaganbet/forum.git"
     2. Run the following command: "make run" and click on the URL address to go to the web page
     3. Then, the home page will be opened in which you can sign up to create your own account.
     4. After authorization, you need to sign in to go to your profile.
